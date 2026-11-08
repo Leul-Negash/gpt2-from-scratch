@@ -1,0 +1,46 @@
+==============================================================================
+C. Context: loss on the same 2,048 validation tokens, predicted from the previous n tokens only
+==============================================================================
+  n tokens seen      loss  perplexity
+  1                3.7597        42.9
+  2                3.1822        24.1
+  4                2.8890        18.0
+  8                2.8002        16.4
+  16               2.7475        15.6
+  32               2.7231        15.2
+  64               2.7266        15.3
+  128              2.7295        15.3
+
+==============================================================================
+D. Prompt length: greedy continuation (80 tokens) of the same validation scene
+==============================================================================
+--- prompt: 1 token ---
+[prompt]'P'
+[model] OLIXENES:
+If I have been a poor souls,
+And I am a presently to be a present,
+And I am a presently to be a present,
+And make a poor officer, and I'll prove
+A
+
+--- prompt: 16 tokens ---
+[prompt]'PETRUCHIO:\nI pray you do.\nI'
+[model] f you have been sent for you, sir, I'll not be advanced
+thee, sir, I am a poor soul.
+
+PETRUCHIO:
+It is a poor soul, sir, and I'll prove you.
+
+PETRUCH
+
+--- prompt: 112 tokens ---
+[prompt]"spirit when she comes.\nSay that she rail; why then I'll tell her plain\nShe sings as sweetly as a nightingale:\nSay that she frown, I'll say she looks as clear\nAs"
+[model] I have done, and I'll prove against thee.
+
+DUKE VINCENTIO:
+It is a present to be a poor soul.
+
+DUKE VINCENTIO:
+It is a present to be a poor s
+
+

@@ -1,0 +1,66 @@
+{
+  "name": "exp_pos_sinusoidal",
+  "params": 858880,
+  "config": {
+    "vocab_size": 512,
+    "block_size": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "n_embd": 128,
+    "dropout": 0.1,
+    "position": "sinusoidal",
+    "causal": true
+  },
+  "train_config": {
+    "batch_size": 32,
+    "max_steps": 800,
+    "lr": 0.001,
+    "min_lr": 0.0001,
+    "warmup_steps": 200,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "grad_clip": 1.0,
+    "eval_interval": 250,
+    "eval_batches": 20,
+    "seed": 1337,
+    "threads": 4
+  },
+  "best_val": 4.382088351249695,
+  "history": [
+    {
+      "step": 0,
+      "train": 6.262756562232971,
+      "val": 6.266480612754822,
+      "lr": 5e-06
+    },
+    {
+      "step": 250,
+      "train": 5.240089416503906,
+      "val": 5.188438796997071,
+      "lr": 0.0009846666218300806
+    },
+    {
+      "step": 500,
+      "train": 4.919999694824218,
+      "val": 4.83783974647522,
+      "lr": 0.00055
+    },
+    {
+      "step": 750,
+      "train": 4.487736463546753,
+      "val": 4.398653268814087,
+      "lr": 0.00011533337816991932
+    },
+    {
+      "step": 800,
+      "train": 4.471483778953552,
+      "val": 4.382088351249695,
+      "lr": 0.0001
+    }
+  ],
+  "seconds_per_step": 0.8552515329512517,
+  "last_position_val": 4.413279294967651
+}

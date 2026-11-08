@@ -1,0 +1,42 @@
+$ python generate.py
+[checkpoint step 5000, val loss 2.7842, temperature 0.8]
+ROMEO:
+As the rovil, with a pawdy palace:
+As that few, did I see the law:
+Whilst thou remember thy heart's purposed times;
+And mayst thou draw thy soul bed,
+Show her from the breaking gentleman:
+So, Richard, our father's life,
+I am favour'd nor no more in the matter of mine.
+
+DUKE OF YORK:
+To meet a royal traitor, thou kissand move to do;
+And then o' the queen's son, and still,
+Where like a
+
+$ python generate.py --prompt "KING HENRY:\n" --greedy --tokens 120
+[checkpoint step 5000, val loss 2.7842, greedy]
+KING HENRY:
+Why, Warwick, Warwick, Warwick, and Warwick,
+And then, Warwick, Warwick, Warwick, Warwick,
+And, in the Duke of York, Warwick, Warwick,
+And, in the Lord Angelo, Warwick,
+And,
+
+$ python generate.py --prompt "To be, or not" --temperature 1.2 --tokens 150 --seed 3
+[checkpoint step 5000, val loss 2.7842, temperature 1.2]
+To be, or not out.
+
+MISTRESS OVERDONE:
+Thrffom are attempt the shame of of that hold
+Must, and with never lose false thy: prison? I'rk, sir, nor do it
+Like and necessary and transpose this.
+
+Tide cage expy or for for Lancaster.
+
+DUKE VINCENTIO:
+
+A fearl hellow is lold.
+
+LUCIO:
+I

@@ -1,0 +1,26 @@
+{
+  "loss_by_context": {
+    "1": 3.7597166299819946,
+    "2": 3.18218269944191,
+    "4": 2.8890010714530945,
+    "8": 2.800179749727249,
+    "16": 2.747478872537613,
+    "32": 2.7230690717697144,
+    "64": 2.726570278406143,
+    "128": 2.729454904794693
+  },
+  "samples": {
+    "1 token": {
+      "prompt": "P",
+      "continuation": "OLIXENES:\nIf I have been a poor souls,\nAnd I am a presently to be a present,\nAnd I am a presently to be a present,\nAnd make a poor officer, and I'll prove\nA"
+    },
+    "16 tokens": {
+      "prompt": "PETRUCHIO:\nI pray you do.\nI",
+      "continuation": "f you have been sent for you, sir, I'll not be advanced\nthee, sir, I am a poor soul.\n\nPETRUCHIO:\nIt is a poor soul, sir, and I'll prove you.\n\nPETRUCH"
+    },
+    "112 tokens": {
+      "prompt": "PETRUCHIO:\nI pray you do.\nI will attend her here,\nAnd woo her with some spirit when she comes.\nSay that she rail; why then I'll tell her plain\nShe sings as sweetly as a nightingale:\nSay that she frown, I'll say she looks as clear\nAs",
+      "continuation": " I have done, and I'll prove against thee.\n\nDUKE VINCENTIO:\nIt is a present to be a poor soul.\n\nDUKE VINCENTIO:\nIt is a present to be a poor s"
+    }
+  }
+}

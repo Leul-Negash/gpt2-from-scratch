@@ -1,0 +1,96 @@
+==============================================================================
+A. Temperature: how sharp the next-token distribution is (validation set)
+==============================================================================
+  T       entropy (nats)  top-1 prob   val loss
+  0.5              1.262       0.633     3.7911
+  0.8              1.987       0.484     2.9821
+  1.0              2.421       0.408     2.8270
+  1.5              3.402       0.265     2.8591
+  2.0              4.200       0.165     3.0995
+
+==============================================================================
+B. Temperature: 8 samples of 150 tokens each from the prompt 'ROMEO:'
+==============================================================================
+  T          real words  repeated 4-grams  distinct words
+  greedy         100.0%             10.5%           41.7%
+  0.5             97.3%              0.0%           72.6%
+  0.8             94.9%              0.0%           82.2%
+  1.0             90.5%              0.0%           84.9%
+  1.5             73.5%              0.0%           91.2%
+  2.0             60.0%              0.0%           91.6%
+
+--- greedy ---
+ROMEO:
+It is a poor soul to be a foot,
+And I am a present to be a poor soul.
+
+ROMEO:
+It is a woman's sweet sweet sweet sweet sweet sweet,
+And she is a poor time to be a poison,
+And she is a presently sweet sweet sweet sweet sweet soul
+As I have done, and I'll prove against
+
+--- temperature 0.5 ---
+ROMEO:
+As I was so here, as I have been patience,
+What I have been incensed, Buckingham,
+Shall I see the queen, or or to the entertain,
+And as they are near to be base.
+
+JULIET:
+Ay, so, my lord, I have gone,
+In this words of you against the sin;
+For I have ta'en here in the matter of the Tower,
+And, if you will put you be p
+
+--- temperature 0.8 ---
+ROMEO:
+As the rovil, with a pawdy palace:
+As that few, did I see the law:
+Whilst thou remember thy heart's purposed times;
+And mayst thou draw thy soul bed,
+Show her from the breaking gentleman:
+So, Richard, our father's life,
+I am favour'd nor no more in the matter of mine.
+
+DUKE OF YORK:
+
+--- temperature 1.0 ---
+ROMEO:
+As hath signed and show her presence:
+What I am in God, I did come.
+More thanks I do it honour; I'll stay, or I live,
+Unwwill a medity draww to live be loying.
+
+Nurse:
+Faith, courtes: and will not stay?
+
+ROMEO:
+He that's the traitor than name?
+
+JULIET:
+Action cannot lend in this peril of
+
+--- temperature 1.5 ---
+ROMEO:
+Jo hatAnd so he of a park'd neck.
+The ears, that if that Gven, Edward shall make's bengether
+Shall see; I king in heart what purposedion compliant! as friend
+What sORTHUMBERLAND:
+Unlaid so give east thy brother will murdaught?
+
+ ourKING EDWARD IV:
+I am favour by nented in my mentonyes.
+Active can I oceive in this peril of
+
+--- temperature 2.0 ---
+ROMEO:
+Jo hatAnd so heI know with his shor neck.
+The evesWhat I amra Gven, E daubon.
+Morenget in him blot of relim I king.
+'Tis que hapion compwi a medgey.
+What hear'd by be loyal now helha from blangaid so gry east thy broody
+'Mause comb that our free eLAt have been ter fawd by nen
+Hellion up rekiveir their on toctive can I oceendenK perifess
+
+

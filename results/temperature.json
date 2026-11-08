@@ -1,0 +1,57 @@
+{
+  "metrics": {
+    "0.5": {
+      "entropy": 1.2619914889335633,
+      "top1": 0.6327302515506744,
+      "val_loss": 3.791098403930664,
+      "real_words": 0.972638044579534,
+      "repeated_4grams": 0.0,
+      "distinct_words": 0.7257915400202635
+    },
+    "0.8": {
+      "entropy": 1.9874685168266297,
+      "top1": 0.4840449601411819,
+      "val_loss": 2.982091760635376,
+      "real_words": 0.9486811956180243,
+      "repeated_4grams": 0.0,
+      "distinct_words": 0.8216895142418037
+    },
+    "1.0": {
+      "entropy": 2.4210967063903808,
+      "top1": 0.40849833488464354,
+      "val_loss": 2.8270343065261843,
+      "real_words": 0.9046853961245369,
+      "repeated_4grams": 0.0,
+      "distinct_words": 0.848657282201633
+    },
+    "1.5": {
+      "entropy": 3.402363586425781,
+      "top1": 0.26461980044841765,
+      "val_loss": 2.8590564727783203,
+      "real_words": 0.7350955230186742,
+      "repeated_4grams": 0.0,
+      "distinct_words": 0.9118006865935593
+    },
+    "2.0": {
+      "entropy": 4.199909257888794,
+      "top1": 0.16482989490032196,
+      "val_loss": 3.099477696418762,
+      "real_words": 0.6004175547170686,
+      "repeated_4grams": 0.0,
+      "distinct_words": 0.9157334484118407
+    },
+    "0.0": {
+      "real_words": 1.0,
+      "repeated_4grams": 0.10526315789473684,
+      "distinct_words": 0.4166666666666667
+    }
+  },
+  "samples": {
+    "0.0": "ROMEO:\nIt is a poor soul to be a foot,\nAnd I am a present to be a poor soul.\n\nROMEO:\nIt is a woman's sweet sweet sweet sweet sweet sweet,\nAnd she is a poor time to be a poison,\nAnd she is a presently sweet sweet sweet sweet sweet soul\nAs I have done, and I'll prove against",
+    "0.5": "ROMEO:\nAs I was so here, as I have been patience,\nWhat I have been incensed, Buckingham,\nShall I see the queen, or or to the entertain,\nAnd as they are near to be base.\n\nJULIET:\nAy, so, my lord, I have gone,\nIn this words of you against the sin;\nFor I have ta'en here in the matter of the Tower,\nAnd, if you will put you be p",
+    "0.8": "ROMEO:\nAs the rovil, with a pawdy palace:\nAs that few, did I see the law:\nWhilst thou remember thy heart's purposed times;\nAnd mayst thou draw thy soul bed,\nShow her from the breaking gentleman:\nSo, Richard, our father's life,\nI am favour'd nor no more in the matter of mine.\n\nDUKE OF YORK:\n",
+    "1.0": "ROMEO:\nAs hath signed and show her presence:\nWhat I am in God, I did come.\nMore thanks I do it honour; I'll stay, or I live,\nUnwwill a medity draww to live be loying.\n\nNurse:\nFaith, courtes: and will not stay?\n\nROMEO:\nHe that's the traitor than name?\n\nJULIET:\nAction cannot lend in this peril of",
+    "1.5": "ROMEO:\nJo hatAnd so he of a park'd neck.\nThe ears, that if that Gven, Edward shall make's bengether\nShall see; I king in heart what purposedion compliant! as friend\nWhat sORTHUMBERLAND:\nUnlaid so give east thy brother will murdaught?\n\n ourKING EDWARD IV:\nI am favour by nented in my mentonyes.\nActive can I oceive in this peril of",
+    "2.0": "ROMEO:\nJo hatAnd so heI know with his shor neck.\nThe evesWhat I amra Gven, E daubon.\nMorenget in him blot of relim I king.\n'Tis que hapion compwi a medgey.\nWhat hear'd by be loyal now helha from blangaid so gry east thy broody\n'Mause comb that our free eLAt have been ter fawd by nen\nHellion up rekiveir their on toctive can I oceendenK perifess"
+  }
+}

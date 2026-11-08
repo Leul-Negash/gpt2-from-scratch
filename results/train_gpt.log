@@ -1,0 +1,23 @@
+gpt: 875,264 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2515 | val 6.2477 | lr 5.00e-06
+step   250 | train 3.7174 | val 3.7815 | lr 1.00e-03 | 1.07 s/step
+step   500 | train 3.3865 | val 3.5371 | lr 9.91e-04 | 1.12 s/step
+step   750 | train 3.1562 | val 3.3931 | lr 9.71e-04 | 1.01 s/step
+step  1000 | train 2.9788 | val 3.2498 | lr 9.40e-04 | 0.98 s/step
+step  1250 | train 2.8522 | val 3.1325 | lr 8.98e-04 | 0.83 s/step
+step  1500 | train 2.7521 | val 3.0746 | lr 8.47e-04 | 0.81 s/step
+step  1750 | train 2.6759 | val 3.0077 | lr 7.88e-04 | 0.80 s/step
+step  2000 | train 2.6161 | val 2.9714 | lr 7.22e-04 | 0.81 s/step
+step  2250 | train 2.5663 | val 2.9224 | lr 6.52e-04 | 0.80 s/step
+step  2500 | train 2.5193 | val 2.9029 | lr 5.79e-04 | 0.76 s/step
+step  2750 | train 2.4801 | val 2.8742 | lr 5.06e-04 | 0.70 s/step
+step  3000 | train 2.4435 | val 2.8564 | lr 4.34e-04 | 0.69 s/step
+step  3250 | train 2.4141 | val 2.8512 | lr 3.64e-04 | 0.69 s/step
+step  3500 | train 2.3919 | val 2.8325 | lr 3.00e-04 | 0.81 s/step
+step  3750 | train 2.3698 | val 2.8159 | lr 2.42e-04 | 0.87 s/step
+step  4000 | train 2.3462 | val 2.7987 | lr 1.93e-04 | 0.73 s/step
+step  4250 | train 2.3320 | val 2.8004 | lr 1.53e-04 | 0.69 s/step
+step  4500 | train 2.3192 | val 2.7929 | lr 1.24e-04 | 0.69 s/step
+step  4750 | train 2.3085 | val 2.7892 | lr 1.06e-04 | 0.69 s/step
+step  5000 | train 2.3007 | val 2.7842 | lr 1.00e-04 | 0.69 s/step

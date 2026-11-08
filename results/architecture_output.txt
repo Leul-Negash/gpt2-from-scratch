@@ -1,0 +1,85 @@
+exp_base: 875,264 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2515 | val 6.2477 | lr 5.00e-06
+step   250 | train 3.7171 | val 3.7811 | lr 9.85e-04 | 0.79 s/step
+step   500 | train 3.3973 | val 3.5365 | lr 5.50e-04 | 0.70 s/step
+step   750 | train 3.2503 | val 3.4419 | lr 1.15e-04 | 0.69 s/step
+step   800 | train 3.2403 | val 3.4370 | lr 1.00e-04 | 0.69 s/step
+exp_heads_1: 875,264 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 1, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2516 | val 6.2478 | lr 5.00e-06
+step   250 | train 3.7206 | val 3.7892 | lr 9.85e-04 | 0.53 s/step
+step   500 | train 3.3903 | val 3.5355 | lr 5.50e-04 | 0.54 s/step
+step   750 | train 3.2395 | val 3.4297 | lr 1.15e-04 | 0.54 s/step
+step   800 | train 3.2297 | val 3.4224 | lr 1.00e-04 | 0.53 s/step
+exp_heads_2: 875,264 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 2, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2516 | val 6.2478 | lr 5.00e-06
+step   250 | train 3.7112 | val 3.7725 | lr 9.85e-04 | 0.60 s/step
+step   500 | train 3.3827 | val 3.5268 | lr 5.50e-04 | 0.60 s/step
+step   750 | train 3.2403 | val 3.4348 | lr 1.15e-04 | 0.60 s/step
+step   800 | train 3.2287 | val 3.4252 | lr 1.00e-04 | 0.60 s/step
+exp_heads_8: 875,264 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 8, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2516 | val 6.2477 | lr 5.00e-06
+step   250 | train 3.7117 | val 3.7717 | lr 9.85e-04 | 0.87 s/step
+step   500 | train 3.3938 | val 3.5294 | lr 5.50e-04 | 0.89 s/step
+step   750 | train 3.2540 | val 3.4423 | lr 1.15e-04 | 1.03 s/step
+step   800 | train 3.2438 | val 3.4337 | lr 1.00e-04 | 1.03 s/step
+exp_layers_1: 280,448 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 1, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2475 | val 6.2391 | lr 5.00e-06
+step   250 | train 3.7209 | val 3.7950 | lr 9.85e-04 | 0.23 s/step
+step   500 | train 3.4477 | val 3.5898 | lr 5.50e-04 | 0.23 s/step
+step   750 | train 3.3340 | val 3.5129 | lr 1.15e-04 | 0.23 s/step
+step   800 | train 3.3275 | val 3.5094 | lr 1.00e-04 | 0.23 s/step
+exp_layers_2: 478,720 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 2, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2377 | val 6.2295 | lr 5.00e-06
+step   250 | train 3.7170 | val 3.7891 | lr 9.85e-04 | 0.42 s/step
+step   500 | train 3.4222 | val 3.5678 | lr 5.50e-04 | 0.38 s/step
+step   750 | train 3.2961 | val 3.4726 | lr 1.15e-04 | 0.36 s/step
+step   800 | train 3.2901 | val 3.4664 | lr 1.00e-04 | 0.36 s/step
+exp_layers_6: 1,271,808 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 6, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2486 | val 6.2463 | lr 5.00e-06
+step   250 | train 3.7172 | val 3.7776 | lr 9.85e-04 | 1.03 s/step
+step   500 | train 3.3859 | val 3.5265 | lr 5.50e-04 | 1.02 s/step
+step   750 | train 3.2312 | val 3.4219 | lr 1.15e-04 | 1.15 s/step
+step   800 | train 3.2188 | val 3.4117 | lr 1.00e-04 | 1.18 s/step
+exp_pos_sinusoidal: 858,880 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'sinusoidal', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2628 | val 6.2665 | lr 5.00e-06
+step   250 | train 5.2401 | val 5.1884 | lr 9.85e-04 | 0.80 s/step
+step   500 | train 4.9200 | val 4.8378 | lr 5.50e-04 | 0.80 s/step
+step   750 | train 4.4877 | val 4.3987 | lr 1.15e-04 | 0.80 s/step
+step   800 | train 4.4715 | val 4.3821 | lr 1.00e-04 | 0.80 s/step
+exp_pos_none: 858,880 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'none', 'causal': True}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2518 | val 6.2476 | lr 5.00e-06
+step   250 | train 3.6949 | val 3.7592 | lr 9.85e-04 | 0.88 s/step
+step   500 | train 3.4515 | val 3.5884 | lr 5.50e-04 | 0.79 s/step
+step   750 | train 3.3418 | val 3.5236 | lr 1.15e-04 | 0.78 s/step
+step   800 | train 3.3346 | val 3.5215 | lr 1.00e-04 | 0.76 s/step
+exp_no_mask: 875,264 parameters, {'vocab_size': 512, 'block_size': 128, 'n_layer': 4, 'n_head': 4, 'n_embd': 128, 'dropout': 0.1, 'position': 'learned', 'causal': False}
+516,405 training tokens, 59,401 validation tokens, 4,096 tokens per step
+step     0 | train 6.2527 | val 6.2484 | lr 5.00e-06
+step   250 | train 3.5953 | val 3.6560 | lr 9.85e-04 | 0.71 s/step
+step   500 | train 3.1538 | val 3.3151 | lr 5.50e-04 | 0.73 s/step
+step   750 | train 3.0151 | val 3.2071 | lr 1.15e-04 | 0.75 s/step
+step   800 | train 3.0035 | val 3.1965 | lr 1.00e-04 | 0.74 s/step
+==============================================================================
+E. Architecture: every model trained 800 steps with the same data, seed and schedule
+==============================================================================
+  variant            params    train      val  last-pos val   s/step
+  base              875,264   3.2403   3.4370        3.4701     0.78
+  heads_1           875,264   3.2297   3.4224        3.4386     0.58
+  heads_2           875,264   3.2287   3.4252        3.4630     0.64
+  heads_8           875,264   3.2438   3.4337        3.4546     1.00
+  layers_1          280,448   3.3275   3.5094        3.5582     0.24
+  layers_2          478,720   3.2901   3.4664        3.5104     0.41
+  layers_6        1,271,808   3.2188   3.4117        3.4697     1.15
+  pos_sinusoidal    858,880   4.4715   4.3821        4.4133     0.86
+  pos_none          858,880   3.3346   3.5215        3.5845     0.86
+  no_mask           875,264   3.0035   3.1965        3.8455     0.78
+

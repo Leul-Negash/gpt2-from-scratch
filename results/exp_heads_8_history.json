@@ -1,0 +1,66 @@
+{
+  "name": "exp_heads_8",
+  "params": 875264,
+  "config": {
+    "vocab_size": 512,
+    "block_size": 128,
+    "n_layer": 4,
+    "n_head": 8,
+    "n_embd": 128,
+    "dropout": 0.1,
+    "position": "learned",
+    "causal": true
+  },
+  "train_config": {
+    "batch_size": 32,
+    "max_steps": 800,
+    "lr": 0.001,
+    "min_lr": 0.0001,
+    "warmup_steps": 200,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "grad_clip": 1.0,
+    "eval_interval": 250,
+    "eval_batches": 20,
+    "seed": 1337,
+    "threads": 4
+  },
+  "best_val": 3.4336790561676027,
+  "history": [
+    {
+      "step": 0,
+      "train": 6.251561570167541,
+      "val": 6.247724103927612,
+      "lr": 5e-06
+    },
+    {
+      "step": 250,
+      "train": 3.7116515755653383,
+      "val": 3.7716944932937624,
+      "lr": 0.0009846666218300806
+    },
+    {
+      "step": 500,
+      "train": 3.393763470649719,
+      "val": 3.5294055938720703,
+      "lr": 0.00055
+    },
+    {
+      "step": 750,
+      "train": 3.2540330052375794,
+      "val": 3.442342686653137,
+      "lr": 0.00011533337816991932
+    },
+    {
+      "step": 800,
+      "train": 3.2437698006629945,
+      "val": 3.4336790561676027,
+      "lr": 0.0001
+    }
+  ],
+  "seconds_per_step": 0.9954066934012508,
+  "last_position_val": 3.454599642753601
+}
