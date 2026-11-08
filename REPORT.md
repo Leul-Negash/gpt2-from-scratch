@@ -202,6 +202,14 @@ nothing to do, and GPT-2 keeps only the decoder stack, with masked self-attentio
   continue, which is why GPT-2 could do some tasks "zero-shot".
 - **Simpler and uniform.** One kind of block repeated, one stream, one objective.
 
+**BERT, the other half.** BERT (Devlin et al., 2019) does the opposite: it keeps only the **encoder** stack, with
+unmasked attention, so every token sees the whole sentence in both directions. It is trained by hiding about 15% of
+the tokens and predicting them from both sides (masked language modelling). That makes it good at understanding a
+complete input (classification, question answering), but it cannot generate text left to right, because it was never
+trained to predict from the past alone. In my code the difference is a single switch: `causal=False` removes the mask
+and turns my blocks into BERT-style encoder blocks; my no-mask experiment (Section 4.6) shows why such a model cannot
+be trained as a next-token predictor.
+
 ### 2.3 Masked, unmasked and cross-attention
 
 | | Unmasked self-attention | Masked (causal) self-attention | Encoder-decoder cross-attention |
@@ -553,3 +561,18 @@ needed (it is in `tests/test_model.py`).
   embeddings: my unscaled sinusoids drowned out the tokens, which is why the paper multiplies embeddings by √d_model.
 - Generation quality depends a lot on decoding: the same model loops with greedy decoding and invents words at
   high temperature.
+
+## References
+
+1. Vaswani, A., et al. (2017). Attention is all you need. *NeurIPS 30*. https://arxiv.org/abs/1706.03762
+2. Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., Sutskever, I. (2019). Language models are unsupervised
+   multitask learners. OpenAI.
+3. Devlin, J., Chang, M.-W., Lee, K., Toutanova, K. (2019). BERT: Pre-training of deep bidirectional Transformers for
+   language understanding. *NAACL*.
+4. He, K., Zhang, X., Ren, S., Sun, J. (2016). Deep residual learning for image recognition. *CVPR*.
+5. Ba, J. L., Kiros, J. R., Hinton, G. E. (2016). Layer normalization. arXiv:1607.06450.
+6. Hendrycks, D., Gimpel, K. (2016). Gaussian error linear units (GELUs). arXiv:1606.08415.
+7. Sennrich, R., Haddow, B., Birch, A. (2016). Neural machine translation of rare words with subword units. *ACL*.
+8. Karpathy, A. (2022). Let's build GPT: from scratch, in code, spelled out. https://www.youtube.com/watch?v=kCc8FmEb1nY
+9. Alammar, J. (2018). The illustrated Transformer. https://jalammar.github.io/illustrated-transformer/
+10. PyTorch documentation. https://docs.pytorch.org/docs/stable/index.html

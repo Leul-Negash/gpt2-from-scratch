@@ -25,6 +25,20 @@ So, Richard, our father's life,
 I am favour'd nor no more in the matter of mine.
 ```
 
+Model and training configuration (`config.py`; also saved in `results/gpt_history.json`):
+
+| Setting | Value | Setting | Value |
+|---|---|---|---|
+| layers | 4 | optimiser | AdamW, β = (0.9, 0.95), weight decay 0.1 |
+| attention heads | 4 (32 dimensions each) | learning rate | 1e-3, 200 warm-up steps, cosine decay to 1e-4 |
+| embedding width | 128 | batch | 32 sequences × 128 tokens |
+| context length | 128 tokens | steps | 5,000 |
+| vocabulary | 512 (byte-level BPE) | dropout | 0.1 |
+| positions | learned | gradient clipping | 1.0 |
+| parameters | 875,264 | data | Tiny Shakespeare, 516,405 train / 59,401 validation tokens |
+
+The full loss history is in `results/train_gpt.log`, and more samples are in `results/samples.txt`.
+
 | Experiment | Main finding |
 |---|---|
 | Train vs validation loss | both fall the whole run; the gap grows from 0.27 (step 1000) to 0.48, so the model starts to memorise |
@@ -133,3 +147,4 @@ python -m pytest -v
 - He, K., et al. (2016). Deep residual learning for image recognition. *CVPR*.
 - Hendrycks, D., Gimpel, K. (2016). Gaussian error linear units (GELUs). arXiv:1606.08415.
 - Karpathy, A. Tiny Shakespeare dataset, from char-rnn. https://github.com/karpathy/char-rnn
+- PyTorch documentation. https://docs.pytorch.org/docs/stable/index.html
